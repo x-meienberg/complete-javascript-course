@@ -12,6 +12,5 @@ console.log(firstName);
 let jonas_matilda = "JM";
 let sfunction = 27;
 let PI = 3.1415;
-
-
+let test = 'Test'
 
