@@ -180,6 +180,24 @@ switch (language) {
 }
 
 // The conditional (ternery) Operator
+population = 6000000
+let aboveOrBelow
+population >= 33000000 ? aboveOrBelow = 'above' : aboveOrBelow = 'below';
+console.log(`${country}'s population is ${aboveOrBelow} average`);
 
+// Coding Challenge 4
+
+// Value 1
+let billValue = 275;
+// Value 2
+billValue = 40;
+// Value 3
+billValue = 430
+
+let tip;
+
+billValue >= 50 && billValue <= 300 ? tip = 0.15*billValue : tip = 0.2*billValue;
+let totalValue = billValue+tip;
+console.log(`The bill was ${billValue}, the tip was ${tip}, and the total value was ${totalValue}`)
 
 
