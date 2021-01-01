@@ -73,13 +73,66 @@ checkWinner(avgDolphins,avgKoalas)
 
 // Basic Array Operations
 
+let neighbours = ['Germany','Italy','France','Austria'];
 
+neighbours.push('Utopia');
+
+neighbours.pop();
+
+if (neighbours.includes('Germany')){
+    console.log('Probably not a central European country :D')
+} 
+else{
+    console.log('A central European country')
+}
+
+neighbours[neighbours.indexOf('Austria')] = 'Republic of Austria';
+
+console.log(neighbours);
 
 // Coding Challenge 2
 
+function calcTip(bill) {
+    if(bill >= 100 && bill <= 300){
+        return bill*0.15;
+    }
+    else{
+        return bill*0.2;
+    }
+}
+
+console.log(calcTip(100));
+
+const bills = [125,555,44];
+
+const tip = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[bills.length-1])];
+
+console.log(bills)
+console.log(tip)
+
+let total = [];
+
+total.push(bills[0]+tip[0]);
+total.push(bills[1]+tip[1]);
+total.push(bills[bills.length-1]+tip[tip.length-1]);
+
+console.log(total)
+
 // Introduction to Objects
 
+const myCountry = {
+    country : 'Switzerland',
+    capital: 'Bern',
+    language: 'German, French, Italian, and Romanic',
+    population: 8.46,
+    neighbours: ['Germany','France','Italy','Austria']
+}
+
+console.log(myCountry)
+
 // Dot vs. Bracket Notation
+
+
 
 // Coding Challenge 3
 
