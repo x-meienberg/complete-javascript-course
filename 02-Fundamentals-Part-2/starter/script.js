@@ -248,3 +248,19 @@ for (let index = 0; index < newBills.length; index++) {
 console.log(tips)
 console.log(totals)
 
+// BONUS to be still determined.
+
+/*
+
+let arr = [];
+
+function calcAverage(arr) {
+    const sum = 0;
+    for (let index = 0; index < arr.length; index++) {
+        sum += arr[index]
+    }
+    
+}
+
+*/
+
