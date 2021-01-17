@@ -74,3 +74,77 @@ const calcTempAmplitude2 = function(temps1, temps2){
 };
 
 calcTempAmplitude2(temperatures, temperatures2)
+
+
+// Debugging
+
+const measureKelvin = function() {
+
+	const measurement = {
+		type: 'temp',
+		unit: 'celsius',
+		value: prompt('Degrees celsius:')
+	}
+
+	console.log(measurement);
+	console.table(measurement);
+
+	console.log(measurement.value)
+	//console.warn(measurement.value)
+	//console.error(measurement.value)
+	const kelvin = measurement.value + 273;
+
+	return kelvin;
+
+}
+
+// Identify bug
+console.log(measureKelvin())
+
+
+// Coding challenge #1
+
+// printForecast function 
+
+const dataOne = [17,21,23]
+const dataTwo = [12,5,-5,0,4]
+
+const printForecast = function(arr) {
+
+	for (var i = 0; i <arr.length; i++) {
+		console.log(arr[i]+ ' in '+(i+1)+' days')
+	}
+
+}
+
+printForecast(dataOne)
+
+printForecast(dataTwo)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
